@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  transition: all 0.3s linear;
+}
+
+html {
+  font-size: 66%;
+  scroll-behavior: smooth;
+}
+
+body {
+  //So that content do not clip to the sides
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  padding: 1rem 3rem;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: white;
+  box-shadow: 0 0.1rem 0.4rem darkslategray;
+}
