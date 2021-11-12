@@ -27,4 +27,53 @@ body {
 
   background: white;
   box-shadow: 0 0.1rem 0.4rem darkslategray;
+
+  .navbar {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      margin: 0 1.5rem;
+
+      a {
+        &:hover {
+          padding-bottom: 0.3rem;
+          border-bottom: 0.2rem solid black;
+        }
+      }
+    }
+  }
+
+  a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #333;
+  }
+
+  .fa-bars {
+    font-size: 3rem;
+    color: black;
+    cursor: pointer;
+  }
+
+  .myName {
+    h1 {
+      margin-bottom: 0;
+    }
+  }
+}
+
+//media queries
+
+//768px - will change later
+@media (max-width: 950px) {
+  html {
+    font-size: 55%;
+  }
 }
