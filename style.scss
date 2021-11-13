@@ -16,6 +16,7 @@ body {
   overflow-x: hidden;
 }
 
+// ********* HEADER **********
 .header {
   width: 100%;
   padding: 1rem 3rem;
@@ -28,28 +29,6 @@ body {
   background: white;
   box-shadow: 0 0.1rem 0.4rem darkslategray;
 
-  .navbar {
-    ul {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
-    }
-
-    li {
-      margin: 0 1.5rem;
-
-      a {
-        &:hover {
-          padding-bottom: 0.3rem;
-          border-bottom: 0.2rem solid black;
-        }
-      }
-    }
-  }
-
   a {
     font-size: 2rem;
     text-decoration: none;
@@ -60,6 +39,7 @@ body {
     font-size: 3rem;
     color: black;
     cursor: pointer;
+    display: none;
   }
 
   .myName {
@@ -67,13 +47,66 @@ body {
       margin-bottom: 0;
     }
   }
+
+  .navbar {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        margin: 0 1.5rem;
+
+        a {
+          &:hover {
+            padding-bottom: 0.3rem;
+            border-bottom: 0.2rem solid black;
+          }
+        }
+      }
+    }
+  }
 }
 
-//media queries
+// ********* Body **********
 
-//768px - will change later
-@media (max-width: 950px) {
+//media queries
+@media (max-width: 768px) {
   html {
     font-size: 55%;
+  }
+
+  .header {
+    .fa-bars {
+      display: block;
+      z-index: 1000;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: calc(100vh - 5.2rem);
+      width: 100vw;
+      // border-top: 0.1rem solid black;
+
+      ul {
+        height: 60%;
+        width: 100%;
+        flex-flow: column;
+        justify-content: center;
+
+        li {
+          margin: 10px;
+
+          a {
+            font-size: 2.5rem;
+          }
+        }
+      }
+    }
   }
 }

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -25,37 +25,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background: white;
   -webkit-box-shadow: 0 0.1rem 0.4rem darkslategray;
-  box-shadow: 0 0.1rem 0.4rem darkslategray;
-}
-
-.header .navbar ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.header .navbar li {
-  margin: 0 1.5rem;
-}
-
-.header .navbar li a:hover {
-  padding-bottom: 0.3rem;
-  border-bottom: 0.2rem solid black;
+          box-shadow: 0 0.1rem 0.4rem darkslategray;
 }
 
 .header a {
@@ -68,15 +45,67 @@ body {
   font-size: 3rem;
   color: black;
   cursor: pointer;
+  display: none;
 }
 
 .header .myName h1 {
   margin-bottom: 0;
 }
 
-@media (max-width: 950px) {
+.header .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header .navbar ul li {
+  margin: 0 1.5rem;
+}
+
+.header .navbar ul li a:hover {
+  padding-bottom: 0.3rem;
+  border-bottom: 0.2rem solid black;
+}
+
+@media (max-width: 768px) {
   html {
     font-size: 55%;
+  }
+  .header .fa-bars {
+    display: block;
+    z-index: 1000;
+  }
+  .header .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: calc(100vh - 5.2rem);
+    width: 100vw;
+  }
+  .header .navbar ul {
+    height: 60%;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .navbar ul li {
+    margin: 10px;
+  }
+  .header .navbar ul li a {
+    font-size: 2.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
