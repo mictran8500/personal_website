@@ -3,9 +3,9 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  font-family: "Open Sans", sans-serif;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
 }
 
 html {
@@ -15,6 +15,7 @@ html {
 
 body {
   overflow-x: hidden;
+  padding-top: 65px;
 }
 
 .header {
@@ -31,12 +32,13 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background: white;
-  -webkit-box-shadow: 0 0.1rem 0.4rem darkslategray;
-          box-shadow: 0 0.1rem 0.4rem darkslategray;
+  -webkit-box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.575);
+          box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.575);
 }
 
 .header a {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
   text-decoration: none;
   color: #333;
 }
@@ -48,8 +50,8 @@ body {
   display: none;
 }
 
-.header .myName h1 {
-  margin-bottom: 0;
+.header .fa-volleyball-ball:hover {
+  color: orange;
 }
 
 .header .navbar ul {
@@ -71,13 +73,32 @@ body {
 }
 
 .header .navbar ul li a:hover {
+  color: orange;
   padding-bottom: 0.3rem;
-  border-bottom: 0.2rem solid black;
+  border-bottom: 0.2rem solid orange;
+}
+
+.about {
+  font-size: 140%;
+}
+
+.about .about-content {
+  padding: 60px 80px 0 110px;
+}
+
+.about h1 {
+  font-size: 60px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.801);
+  padding-bottom: 20px;
 }
 
 @media (max-width: 768px) {
   html {
-    font-size: 55%;
+    font-size: 70%;
+  }
+  body {
+    padding-top: 60px;
   }
   .header .fa-bars {
     display: block;
@@ -85,13 +106,12 @@ body {
   }
   .header .navbar {
     position: fixed;
-    top: 0;
+    top: -120%;
     left: 0;
-    height: calc(100vh - 5.2rem);
     width: 100vw;
   }
   .header .navbar ul {
-    height: 60%;
+    height: 50%;
     width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -105,7 +125,19 @@ body {
     margin: 10px;
   }
   .header .navbar ul li a {
-    font-size: 2.5rem;
+    font-size: 2rem;
+  }
+  .header .nav-toggle {
+    top: 0;
+    height: 45%;
+    background-color: white;
+    border-bottom: 0.1rem solid black;
+  }
+  .about-image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,8 @@
 $(document).ready(function() {
     $('.fa-bars').click(function() {
         $(this).toggleClass('fa-times');
-        console.log('hello');
+        $('.navbar').toggleClass('nav-toggle');
     });
+
+    // $(window).on('scroll load', function() {})
 });

@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Open Sans", "Helvetica Neue", sans-serif;
-  transition: all 0.3s linear;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.15s linear;
 }
 
 html {
@@ -12,8 +12,8 @@ html {
 }
 
 body {
-  //So that content do not clip to the sides
   overflow-x: hidden;
+  padding-top: 65px;
 }
 
 // ********* HEADER **********
@@ -27,10 +27,11 @@ body {
   justify-content: space-between;
 
   background: white;
-  box-shadow: 0 0.1rem 0.4rem darkslategray;
+  box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.575);
 
   a {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    font-weight: bold;
     text-decoration: none;
     color: #333;
   }
@@ -42,9 +43,9 @@ body {
     display: none;
   }
 
-  .myName {
-    h1 {
-      margin-bottom: 0;
+  .fa-volleyball-ball {
+    &:hover {
+      color: orange;
     }
   }
 
@@ -62,8 +63,9 @@ body {
 
         a {
           &:hover {
+            color: orange;
             padding-bottom: 0.3rem;
-            border-bottom: 0.2rem solid black;
+            border-bottom: 0.2rem solid orange;
           }
         }
       }
@@ -71,12 +73,30 @@ body {
   }
 }
 
-// ********* Body **********
+// ********* About Me **********
+.about {
+  font-size: 140%;
+
+  .about-content {
+    padding: 60px 80px 0 110px;
+  }
+
+  h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.801);
+    padding-bottom: 20px;
+  }
+}
 
 //media queries
 @media (max-width: 768px) {
   html {
-    font-size: 55%;
+    font-size: 70%;
+  }
+
+  body {
+    padding-top: 60px;
   }
 
   .header {
@@ -87,14 +107,14 @@ body {
 
     .navbar {
       position: fixed;
-      top: 0;
+      top: -120%;
       left: 0;
-      height: calc(100vh - 5.2rem);
+      // height: calc(100vh - 5.2rem);
       width: 100vw;
       // border-top: 0.1rem solid black;
 
       ul {
-        height: 60%;
+        height: 50%;
         width: 100%;
         flex-flow: column;
         justify-content: center;
@@ -103,10 +123,24 @@ body {
           margin: 10px;
 
           a {
-            font-size: 2.5rem;
+            font-size: 2rem;
           }
         }
       }
     }
+
+    .nav-toggle {
+      top: 0;
+      height: 45%;
+      background-color: white;
+      border-bottom: 0.1rem solid black;
+    }
+  }
+
+  .about-image {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
   }
 }
