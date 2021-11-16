@@ -26,6 +26,18 @@ body {
   font-size: 30px;
 }
 
+.heading::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  height: 0.3rem;
+  width: 5rem;
+  background: rgba(0, 0, 0, 0.801);
+}
+
 .header {
   width: 100%;
   padding: 1rem 3rem;
@@ -90,6 +102,10 @@ body {
   margin-bottom: 100px;
 }
 
+.about .row {
+  padding-bottom: 40px;
+}
+
 .about .about-content {
   padding: 30px 90px 0 60px;
 }
@@ -105,6 +121,23 @@ body {
   font-size: 120%;
 }
 
+.about .card {
+  margin: 20px;
+  padding: 30px;
+}
+
+.about .card1:hover {
+  background-color: lightgray;
+}
+
+.about .card2:hover {
+  background-color: lightgray;
+}
+
+.about .card3:hover {
+  background-color: lightgray;
+}
+
 .skills-background {
   padding-bottom: 70px;
   background-color: #eeeeee;
@@ -112,6 +145,8 @@ body {
 
 .skills {
   background-color: #eeeeee;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .skills:before, .skills:after {
