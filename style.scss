@@ -94,7 +94,7 @@ body {
 
 // ********* About Me **********
 .about {
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   // font-size: 140%;
 
   .row {
@@ -142,7 +142,7 @@ body {
 
 // ********* Skills **********
 .skills-background {
-  padding-bottom: 70px;
+  padding-bottom: 100px;
   background-color: rgb(238, 238, 238);
 }
 
@@ -170,6 +170,64 @@ body {
   h2 {
     margin-top: 10px;
     font-weight: bold;
+  }
+}
+
+// ********* Experience **********
+.experience {
+  min-height: 90vh;
+  background: #333;
+
+  .heading {
+    color: #fff;
+
+    &::after {
+      background: #fff;
+    }
+  }
+
+  .row {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .box {
+    height: 32rem;
+    width: 100%;
+    padding-left: 2.5rem;
+    border-left: 0.1rem solid #fff;
+    position: relative;
+    color: white;
+
+    &::after {
+      content: "....";
+      z-index: 9999;
+      position: absolute;
+      top: 0.5rem;
+      left: -1rem;
+      height: 2rem;
+      width: 2rem;
+      background: #fff;
+      border-radius: 5rem;
+    }
+
+    .year {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      color: orange;
+      margin: 1rem 0;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
+
+  .box-top {
   }
 }
 
