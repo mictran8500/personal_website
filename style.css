@@ -234,7 +234,7 @@ body {
 }
 
 .projects .box .card {
-  min-height: 70vh;
+  min-height: 65vh;
   border-radius: 25px;
   margin-right: 10%;
   margin-left: 10%;
@@ -248,23 +248,20 @@ body {
 
 .projects .box .card #sudoku {
   background: url("images/sudoku.png") no-repeat;
-  height: 55vh;
+  height: 28rem;
   width: 80%;
-  background-position: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 12%;
 }
 
 .projects .box .card #sudoku:hover {
   background: url("images/sudoku_solved.png") no-repeat;
-  background-position: center;
 }
 
 .projects .box .card .project-text {
   font-size: 1.1rem;
   margin-top: auto;
   margin-bottom: auto;
-  padding-right: 40px;
+  padding-right: 8%;
 }
 
 .projects .box-between {

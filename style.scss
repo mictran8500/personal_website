@@ -240,7 +240,7 @@ body {
 
   .box {
     .card {
-      min-height: 70vh;
+      min-height: 65vh;
       border-radius: 25px;
       margin-right: 10%;
       margin-left: 10%;
@@ -253,15 +253,14 @@ body {
 
       #sudoku {
         background: url("images/sudoku.png") no-repeat;
-        height: 55vh;
+        height: 28rem;
         width: 80%;
-        background-position: center;
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 12%;
+        // background-position: center;
 
         &:hover {
           background: url("images/sudoku_solved.png") no-repeat;
-          background-position: center;
+          // background-position: center;
         }
       }
 
@@ -269,7 +268,7 @@ body {
         font-size: 1.1rem;
         margin-top: auto;
         margin-bottom: auto;
-        padding-right: 40px;
+        padding-right: 8%;
       }
     }
   }
