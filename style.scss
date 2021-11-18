@@ -35,7 +35,7 @@ body {
   }
 }
 
-// ********* HEADER **********
+// ******************** HEADER ********************
 .header {
   width: 100%;
   padding: 1rem 3rem;
@@ -92,7 +92,7 @@ body {
   }
 }
 
-// ********* About Me **********
+// ******************** About Me ********************
 .about {
   margin-bottom: 70px;
   // font-size: 140%;
@@ -140,7 +140,7 @@ body {
   }
 }
 
-// ********* Skills **********
+// ******************** Skills ********************
 .skills-background {
   padding-bottom: 100px;
   background-color: rgb(238, 238, 238);
@@ -173,7 +173,7 @@ body {
   }
 }
 
-// ********* Experience **********
+// ******************** Experience ********************
 .experience {
   min-height: 90vh;
   background: #333;
@@ -193,7 +193,7 @@ body {
   }
 
   .box {
-    height: 32rem;
+    height: 30rem;
     width: 100%;
     padding-left: 2.5rem;
     border-left: 0.1rem solid #fff;
@@ -214,24 +214,75 @@ body {
 
     .year {
       font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
 
     h3 {
       font-size: 2rem;
       color: orange;
-      margin: 1rem 0;
+      margin-bottom: 5px;
     }
 
     p {
       font-size: 1.3rem;
+      margin-top: 1.5rem;
     }
-  }
-
-  .box-top {
   }
 }
 
-//media queries
+// ******************** Projects ********************
+.projects {
+  margin-top: 40px;
+
+  .box1 {
+    margin-top: 20px;
+  }
+
+  .box {
+    .card {
+      min-height: 70vh;
+      border-radius: 25px;
+      margin-right: 10%;
+      margin-left: 10%;
+      border: 0.4rem solid black;
+
+      h4 {
+        font-family: "Open Sans";
+        font-weight: bold;
+      }
+
+      #sudoku {
+        background: url("images/sudoku.png") no-repeat;
+        height: 55vh;
+        width: 80%;
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        &:hover {
+          background: url("images/sudoku_solved.png") no-repeat;
+          background-position: center;
+        }
+      }
+
+      .project-text {
+        font-size: 1.1rem;
+        margin-top: auto;
+        margin-bottom: auto;
+        padding-right: 40px;
+      }
+    }
+  }
+
+  .box-between {
+    height: 3rem;
+    margin-left: 50%;
+    border-left: 0.4rem solid black;
+    position: relative;
+  }
+}
+
+// ******************** Media Queries ********************
 @media (max-width: 768px) {
   html {
     font-size: 70%;

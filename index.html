@@ -31,7 +31,7 @@
       <div class="fas fa-bars"></div>
       <nav class="navbar">
         <ul>
-          <li><a href="#about">Home</a></li>
+          <!-- <li><a href="#about">Home</a></li> -->
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -54,7 +54,7 @@
             I am currently on the final stretch of obtaining my Bachelor's in Computer Science (expected graduation: early-2022). I've been working as a QA specialist on my team for about half a year now. I believe my detail oriented mindset and strive for creating bug-free, user-friendly products makes me suited for a position like this. However, I can't help but feel like I'm not allowing my skills to flourish. My work in QA has given me the opportunity to get a close look at some amazing features implemented by the developers on my team. The software and technologies that they use are intriguing, and I only have admiration for their problem-solving skills and quick-wittedness when it comes to dealing with the defects and bugs I submit. That is why I've made the decision to put myself in a position where I can, to put simply, create. 
           </p>
           <p>
-            I've had a ton of fun learning new technologies. My experience ranges from experimentation with AI algorithms, to database creation and management, to web development. One of my favorite projects is my research on the ability of genetic algorithms, a metaheuristic inspired by Charles Darwin's theory of natural evolution, to solve Sudoku puzzles. [I might go into more detail about this project here]. Being able to simulate a mechanism of evolution and use that to solve complex puzzles is amusing to me.
+            I've had a ton of fun learning new technologies. My experience ranges from experimentation with AI algorithms, to database creation and management, to web development. One of my favorite projects is my research on the ability of genetic algorithms, a metaheuristic inspired by Charles Darwin's theory of natural evolution, to solve Sudoku puzzles. [I might go into more detail about this project here]. Being able to simulate a mechanism of evolution and use that to solve complex puzzles is exciting to me.
           </p>
           <p>
             [Here I will probably go into one more project I enjoyed, but I will not bore you with that. Please let me know what else I could include.]
@@ -161,9 +161,10 @@
       <div class="heading text-center">Experience</div>
       <div class="row justify-content-around mt-5 pt-5">
         <div class="col-md-4">
-          <div class="box box-top">
+          <div class="box">
             <div class="year">2016 - 2020</div>
-            <h3>Senior Tutor / Database Admin - Kumon</h3>
+            <h3 class="title-first">Senior Tutor,</h3>
+            <h3>Database Admin - Kumon</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae explicabo ea eos similique reiciendis corporis expedita non delectus repellat ratione, molestiae ex eum tenetur harum dicta repudiandae nihil excepturi. </p>
           </div>
           <div class="box">
@@ -173,7 +174,7 @@
           </div>
         </div>
         <div class="col-md-4 pl-md-0 pl-4">
-          <div class="box box-top">
+          <div class="box">
             <div class="year">2021 - Present</div>
             <h3>QA Intern - CollegeNet</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis vitae explicabo ea eos similique reiciendis corporis expedita non delectus repellat ratione, molestiae ex eum tenetur harum dicta repudiandae nihil excepturi. </p>
@@ -190,6 +191,41 @@
     <!-- Projects -->
     <section class="projects container" id="projects">
       <div class="heading text-center">Projects</div>
+      <div class="box box1">
+        <div class="card">
+          <h4 class="text-center pt-4 pb-4">Genetic Algorithms for Solving Sudoku Puzzles</h4>
+          <div class="row">
+            <div class="col-md-6 text-center">
+              <div id="sudoku"></div>
+            </div>
+            <div class="col-md-6 project-text">
+              <p>
+                The use of genetic algorithms have proven successful for a number of unique applications. Domains that utilize GAs range from game theory equilibrium resolution, to artificial creativity. GAs have also found success in solving numerous NP-complete problems, such as the Traveling Salesman Problem. While all NP-complete problems are equally difficult in regards to general computational complexity, some problems offer a much more advantageous representation for GAs. Thus, allowing GAs to be more effective in solving that specific set of problems. Our goal was to determine if Sudoku falls within that set. 
+              </p>
+              <p style="text-align: center;">
+                <a class="button" href="#">Read More</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="box-between"></div>
+      <div class="box">
+        <div class="card">
+          <h4 class="text-center pt-4 pb-4">Web Development</h4>
+          <div class="row">
+            <div class="col-md-6">
+              <!-- image goes here -->
+            </div>
+            <div class="col-md-6 project-text">
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum dignissimos molestias asperiores eveniet beatae! Eos nam tempora odit? Recusandae quis consequatur soluta natus, sed consequuntur cupiditate commodi accusamus totam amet.</p>
+              <p style="text-align: center;">
+                <a class="button" href="#">Read More</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
