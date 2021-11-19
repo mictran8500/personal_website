@@ -116,13 +116,23 @@ body {
   }
 
   .card {
-    margin: 20px;
-    padding: 30px;
+    border: 0.1rem solid #333;
+    min-height: 20rem;
+
+    .card-header {
+      font-size: 2.2rem;
+    }
+
+    .card-body {
+      font-size: 1.2rem;
+      padding: 3rem;
+    }
   }
 
   .card1 {
+    background: #c2f3d3;
     &:hover {
-      background-color: lightgray;
+      background-color: #b4f0d4;
     }
   }
 
@@ -238,12 +248,20 @@ body {
   }
 
   .box {
+    .card-sudoku {
+      background: #c5d4eb;
+    }
+
+    .card-lets-eat {
+      background: #d3ebe8;
+    }
+
     .card {
       min-height: 65vh;
       border-radius: 25px;
       margin-right: 10%;
       margin-left: 10%;
-      border: 0.4rem solid black;
+      border: 0.4rem solid #333;
 
       h4 {
         font-family: "Open Sans";
@@ -300,8 +318,100 @@ body {
   .box-between {
     height: 3rem;
     margin-left: 50%;
-    border-left: 0.4rem solid black;
+    border-left: 0.4rem solid #333;
     position: relative;
+  }
+}
+
+// ******************** Contact ********************
+.contact {
+  margin-top: 55px;
+  min-height: 90vh;
+
+  .row {
+    margin-top: 30px;
+  }
+
+  .info {
+    // background: #333;
+
+    .information {
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+      margin-left: 2rem;
+
+      h2 {
+        font-size: 2rem;
+        color: rgb(150, 102, 20);
+
+        i {
+          padding: 0 1rem;
+          color: #333;
+        }
+      }
+
+      p {
+        font-size: 1.8rem;
+        color: #666;
+      }
+    }
+  }
+
+  .contact-input {
+    padding: 0 1rem;
+    margin: 0 5%;
+
+    .name,
+    .email,
+    textarea {
+      height: 3rem;
+      width: 100%;
+      background: none;
+      border: none;
+      outline: none;
+      border-bottom: 0.1rem solid #333;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      font-size: 1.8rem;
+
+      &:focus {
+        border-bottom: 0.2rem solid #333;
+      }
+    }
+
+    .name {
+      width: 45%;
+    }
+
+    textarea {
+      height: 20rem;
+      border: 0.1rem solid #333;
+      resize: none;
+
+      &:focus {
+        border: 0.2rem solid #333;
+      }
+    }
+  }
+
+  .name-input {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  input[type="submit"] {
+    height: 4rem;
+    width: 12rem;
+    background: #333;
+    color: #fff;
+    font-size: 1.7rem;
+    margin-left: 25%;
+    margin-bottom: 3rem;
+
+    &:hover {
+      background: orange;
+      box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.3);
+    }
   }
 }
 

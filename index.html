@@ -61,23 +61,32 @@
           </p>
         </div>
       </div>
-      <div class="row card-group text-center">
-        <div class="card card1">
-          <h4 class="card-title">Always Adapting</h4>
-          <div class="card-body">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ad dolorum consequatur consectetur sit aliquid animi illum molestias aspernatur? Qui soluta error magni deleniti aperiam esse quidem dicta corrupti facilis?
+      <div class="row text-center">
+        <div class="col-sm-4">
+          <div class="card card1">
+            <h4 class="card-header">Always Adapting</h4>
+            <!-- <h4 class="card-title">Always Adapting</h4> -->
+            <div class="card-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ad dolorum consequatur consectetur sit aliquid animi illum molestias aspernatur? Qui soluta error magni deleniti aperiam esse quidem dicta corrupti facilis?
+            </div>
           </div>
         </div>
-        <div class="card card2">
-          <h4 class="card-title">Napping Connoissuer</h4>
-          <div class="card-body">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ad dolorum consequatur consectetur sit aliquid animi illum molestias aspernatur? Qui soluta error magni deleniti aperiam esse quidem dicta corrupti facilis?
+        <div class="col-sm-4">
+          <div class="card card2">
+            <h4 class="card-header">Napping Connoissuer</h4>
+            <!-- <h4 class="card-title">Napping Connoissuer</h4> -->
+            <div class="card-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ad dolorum consequatur consectetur sit aliquid animi illum molestias aspernatur? Qui soluta error magni deleniti aperiam esse quidem dicta corrupti facilis?
+            </div>
           </div>
         </div>
-        <div class="card card3">
-          <h4 class="card-title">Stack Overflow Expert</h4>
-          <div class="card-body">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ad dolorum consequatur consectetur sit aliquid animi illum molestias aspernatur? Qui soluta error magni deleniti aperiam esse quidem dicta corrupti facilis?
+        <div class="col-sm-4">
+          <div class="card card3">
+            <h4 class="card-header">Stack Overflow Expert</h4>
+            <!-- <h4 class="card-title">Stack Overflow Expert</h4> -->
+            <div class="card-body">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni ad dolorum consequatur consectetur sit aliquid animi illum molestias aspernatur? Qui soluta error magni deleniti aperiam esse quidem dicta corrupti facilis?
+            </div>
           </div>
         </div>
       </div>
@@ -192,7 +201,7 @@
     <section class="projects container" id="projects">
       <div class="heading text-center">Projects</div>
       <div class="box box1">
-        <div class="card">
+        <div class="card card-sudoku">
           <div class="row">
             <div class="col-md-6 project-image">
               <div id="sudoku"></div>
@@ -211,7 +220,7 @@
       </div>
       <div class="box-between"></div>
       <div class="box">
-        <div class="card">
+        <div class="card card-lets-eat">
           <div class="row">
             <div class="col-md-6 project-image">
               <div id="lets-eat"></div>
@@ -226,6 +235,45 @@
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact container" id="contact">
+      <div class="heading text-center">Contact Me</div>
+      <div class="row">
+        <div class="col-md-3 info">
+          <div class="information">
+            <h2><i class="fas fa-map-marker-alt"></i>Address</h2>
+            <p>20123 SW Jay St., <br>
+              Hillsboro, OR <br>
+              97003
+            </p>
+          </div>
+          <div class="information">
+            <h2><i class="fas fa-envelope"></i>Email</h2>
+            <p>mhtran.hy@gmail.com</p>
+          </div>
+          <div class="information">
+            <h2><i class="fas fa-phone"></i>Cell</h2>
+            <p>503-853-3834</p>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <form action="">
+            <div class="contact-input name-input">
+              <input type="text" placeholder="first name" class="name" required>
+              <input type="text" placeholder="last name" class="name" required>
+            </div>
+            <div class="contact-input">
+              <input type="email" placeholder="email" class="email" required>
+            </div>
+            <div class="contact-input">
+              <textarea name="" id="" cols="30" rows="10" placeholder="message" required></textarea>
+            </div>
+            <input type="submit" value="Submit">
+          </form>
         </div>
       </div>
     </section>

@@ -122,12 +122,25 @@ body {
 }
 
 .about .card {
-  margin: 20px;
-  padding: 30px;
+  border: 0.1rem solid #333;
+  min-height: 20rem;
+}
+
+.about .card .card-header {
+  font-size: 2.2rem;
+}
+
+.about .card .card-body {
+  font-size: 1.2rem;
+  padding: 3rem;
+}
+
+.about .card1 {
+  background: #c2f3d3;
 }
 
 .about .card1:hover {
-  background-color: lightgray;
+  background-color: #b4f0d4;
 }
 
 .about .card2:hover {
@@ -233,12 +246,20 @@ body {
   margin-top: 20px;
 }
 
+.projects .box .card-sudoku {
+  background: #c5d4eb;
+}
+
+.projects .box .card-lets-eat {
+  background: #d3ebe8;
+}
+
 .projects .box .card {
   min-height: 65vh;
   border-radius: 25px;
   margin-right: 10%;
   margin-left: 10%;
-  border: 0.4rem solid black;
+  border: 0.4rem solid #333;
 }
 
 .projects .box .card h4 {
@@ -298,8 +319,102 @@ body {
 .projects .box-between {
   height: 3rem;
   margin-left: 50%;
-  border-left: 0.4rem solid black;
+  border-left: 0.4rem solid #333;
   position: relative;
+}
+
+.contact {
+  margin-top: 55px;
+  min-height: 90vh;
+}
+
+.contact .row {
+  margin-top: 30px;
+}
+
+.contact .info .information {
+  margin-top: 1rem;
+  margin-bottom: 4rem;
+  margin-left: 2rem;
+}
+
+.contact .info .information h2 {
+  font-size: 2rem;
+  color: #966614;
+}
+
+.contact .info .information h2 i {
+  padding: 0 1rem;
+  color: #333;
+}
+
+.contact .info .information p {
+  font-size: 1.8rem;
+  color: #666;
+}
+
+.contact .contact-input {
+  padding: 0 1rem;
+  margin: 0 5%;
+}
+
+.contact .contact-input .name,
+.contact .contact-input .email,
+.contact .contact-input textarea {
+  height: 3rem;
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem solid #333;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  font-size: 1.8rem;
+}
+
+.contact .contact-input .name:focus,
+.contact .contact-input .email:focus,
+.contact .contact-input textarea:focus {
+  border-bottom: 0.2rem solid #333;
+}
+
+.contact .contact-input .name {
+  width: 45%;
+}
+
+.contact .contact-input textarea {
+  height: 20rem;
+  border: 0.1rem solid #333;
+  resize: none;
+}
+
+.contact .contact-input textarea:focus {
+  border: 0.2rem solid #333;
+}
+
+.contact .name-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact input[type="submit"] {
+  height: 4rem;
+  width: 12rem;
+  background: #333;
+  color: #fff;
+  font-size: 1.7rem;
+  margin-left: 25%;
+  margin-bottom: 3rem;
+}
+
+.contact input[type="submit"]:hover {
+  background: orange;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.3);
+          box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.3);
 }
 
 @media (max-width: 768px) {
