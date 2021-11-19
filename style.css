@@ -244,17 +244,48 @@ body {
 .projects .box .card h4 {
   font-family: "Open Sans";
   font-weight: bold;
+  font-size: 2rem;
+}
+
+.projects .box .card .row {
+  margin: auto;
+}
+
+.projects .box .card .project-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .projects .box .card #sudoku {
   background: url("images/sudoku.png") no-repeat;
+  background-size: contain;
   height: 28rem;
-  width: 80%;
-  margin-left: 12%;
+  width: 100%;
+  background-position: center;
 }
 
 .projects .box .card #sudoku:hover {
   background: url("images/sudoku_solved.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.projects .box .card #lets-eat {
+  background: url("images/lets_eat_form.png") no-repeat;
+  background-size: contain;
+  height: 26rem;
+  width: 100%;
+  background-position: center;
+}
+
+.projects .box .card #lets-eat:hover {
+  background: url("images/lets_eat_result.png") no-repeat;
+  background-size: contain;
+  background-position: center;
 }
 
 .projects .box .card .project-text {

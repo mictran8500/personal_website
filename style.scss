@@ -95,7 +95,6 @@ body {
 // ******************** About Me ********************
 .about {
   margin-bottom: 70px;
-  // font-size: 140%;
 
   .row {
     padding-bottom: 40px;
@@ -249,18 +248,43 @@ body {
       h4 {
         font-family: "Open Sans";
         font-weight: bold;
+        font-size: 2rem;
+      }
+
+      .row {
+        margin: auto;
+      }
+
+      .project-image {
+        display: flex;
+        align-items: center;
       }
 
       #sudoku {
         background: url("images/sudoku.png") no-repeat;
+        background-size: contain;
         height: 28rem;
-        width: 80%;
-        margin-left: 12%;
-        // background-position: center;
+        width: 100%;
+        background-position: center;
 
         &:hover {
           background: url("images/sudoku_solved.png") no-repeat;
-          // background-position: center;
+          background-size: contain;
+          background-position: center;
+        }
+      }
+
+      #lets-eat {
+        background: url("images/lets_eat_form.png") no-repeat;
+        background-size: contain;
+        height: 26rem;
+        width: 100%;
+        background-position: center;
+
+        &:hover {
+          background: url("images/lets_eat_result.png") no-repeat;
+          background-size: contain;
+          background-position: center;
         }
       }
 
