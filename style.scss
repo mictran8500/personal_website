@@ -115,6 +115,11 @@ body {
     font-size: 120%;
   }
 
+  .card-row {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+
   .card {
     border: 0.1rem solid #333;
     min-height: 20rem;
@@ -187,11 +192,22 @@ body {
   min-height: 90vh;
   background: #333;
 
-  .heading {
-    color: #fff;
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+    padding-top: 60px;
 
-    &::after {
-      background: #fff;
+    .exp-links {
+      padding: 8px 50px 0 50px;
+    }
+
+    .heading {
+      color: #fff;
+
+      &::after {
+        background: #fff;
+      }
     }
   }
 
@@ -311,6 +327,21 @@ body {
         margin-top: auto;
         margin-bottom: auto;
         padding-right: 8%;
+      }
+
+      .project-source {
+        border-radius: 15px;
+        padding: 5px 10px;
+        margin-bottom: 5px;
+
+        &:hover {
+          background: orange;
+        }
+
+        .source-text {
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
       }
     }
   }

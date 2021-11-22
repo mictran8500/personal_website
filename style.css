@@ -121,6 +121,11 @@ body {
   font-size: 120%;
 }
 
+.about .card-row {
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
 .about .card {
   border: 0.1rem solid #333;
   min-height: 20rem;
@@ -187,11 +192,26 @@ body {
   background: #333;
 }
 
-.experience .heading {
+.experience .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -60px;
+  padding-top: 60px;
+}
+
+.experience .flex-container .exp-links {
+  padding: 8px 50px 0 50px;
+}
+
+.experience .flex-container .heading {
   color: #fff;
 }
 
-.experience .heading::after {
+.experience .flex-container .heading::after {
   background: #fff;
 }
 
@@ -314,6 +334,21 @@ body {
   margin-top: auto;
   margin-bottom: auto;
   padding-right: 8%;
+}
+
+.projects .box .card .project-source {
+  border-radius: 15px;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+}
+
+.projects .box .card .project-source:hover {
+  background: orange;
+}
+
+.projects .box .card .project-source .source-text {
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .projects .box-between {
