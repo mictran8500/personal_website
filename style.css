@@ -9,7 +9,7 @@
 }
 
 html {
-  font-size: 66%;
+  font-size: 85%;
   scroll-behavior: smooth;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .heading {
-  padding-top: 60px;
+  padding-top: 80px;
   margin-top: -60px;
   font-family: "Exo 2";
   font-weight: bold;
@@ -107,7 +107,7 @@ body {
 }
 
 .about .about-image {
-  padding-top: 15%;
+  padding-top: 25%;
 }
 
 .about .about-content {
@@ -219,7 +219,7 @@ body {
 }
 
 .experience .flex-container .exp-links {
-  padding: 8px 50px 0 50px;
+  padding: 27px 50px 0 50px;
 }
 
 .experience .flex-container .heading {
@@ -237,7 +237,7 @@ body {
 }
 
 .experience .box {
-  height: 30rem;
+  height: 25rem;
   width: 100%;
   padding-left: 2.5rem;
   border-left: 0.1rem solid #fff;
@@ -271,6 +271,10 @@ body {
 .experience .box p {
   font-size: 1.3rem;
   margin-top: 1.5rem;
+}
+
+.experience .box-extend {
+  height: 34rem;
 }
 
 .projects {
@@ -403,7 +407,7 @@ body {
 }
 
 .contact .info .information p {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #666;
 }
 
@@ -471,16 +475,31 @@ body {
           box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.3);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .about .card-row {
-    margin-right: 0;
-    margin-left: 0;
+    display: block;
+  }
+  .about .card-row .card {
+    width: 300%;
+  }
+}
+
+@media (max-width: 992px) {
+  .about .row {
+    display: block;
+  }
+  .about .about-image {
+    width: 100vh;
+  }
+  .about .about-content {
+    padding-right: 0;
+    width: 100vh;
   }
   .experience .box {
     height: 38rem;
   }
   .contact .info .information p {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 
