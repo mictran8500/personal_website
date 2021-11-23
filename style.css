@@ -71,7 +71,7 @@ body {
 }
 
 .header .fa-volleyball-ball:hover {
-  color: orange;
+  color: #c6bee6;
 }
 
 .header .navbar ul {
@@ -93,9 +93,9 @@ body {
 }
 
 .header .navbar ul li a:hover {
-  color: orange;
+  color: #c6bee6;
   padding-bottom: 0.3rem;
-  border-bottom: 0.2rem solid orange;
+  border-bottom: 0.2rem solid #c6bee6;
 }
 
 .about {
@@ -106,8 +106,12 @@ body {
   padding-bottom: 40px;
 }
 
+.about .about-image {
+  padding-top: 20%;
+}
+
 .about .about-content {
-  padding: 30px 90px 0 60px;
+  padding: 30px 90px 0 45px;
 }
 
 .about h1 {
@@ -140,20 +144,31 @@ body {
   padding: 3rem;
 }
 
-.about .card1 {
-  background: #c2f3d3;
+.about .card1 .card-header {
+  background-color: #cef0e0;
 }
 
 .about .card1:hover {
-  background-color: #b4f0d4;
+  -webkit-box-shadow: 7px 7px #c6bee6;
+          box-shadow: 7px 7px #c6bee6;
+}
+
+.about .card2 .card-header {
+  background-color: #f5d8f5;
 }
 
 .about .card2:hover {
-  background-color: lightgray;
+  -webkit-box-shadow: 7px 7px #cef0e0;
+          box-shadow: 7px 7px #cef0e0;
+}
+
+.about .card3 .card-header {
+  background-color: #c6bee6;
 }
 
 .about .card3:hover {
-  background-color: lightgray;
+  -webkit-box-shadow: 7px 7px #f5d8f5;
+          box-shadow: 7px 7px #f5d8f5;
 }
 
 .skills-background {
@@ -342,13 +357,17 @@ body {
   margin-bottom: 5px;
 }
 
-.projects .box .card .project-source:hover {
-  background: orange;
-}
-
 .projects .box .card .project-source .source-text {
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.projects .box .card .source1:hover {
+  background: #d3ebe8;
+}
+
+.projects .box .card .source2:hover {
+  background: #c5d4eb;
 }
 
 .projects .box-between {
@@ -375,7 +394,7 @@ body {
 
 .contact .info .information h2 {
   font-size: 2rem;
-  color: #966614;
+  color: #333;
 }
 
 .contact .info .information h2 i {
@@ -447,7 +466,7 @@ body {
 }
 
 .contact input[type="submit"]:hover {
-  background: orange;
+  background: #c6bee6;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.3);
           box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.3);
 }
@@ -497,6 +516,9 @@ body {
     margin-right: auto;
     margin-left: auto;
     width: 50%;
+  }
+  .contact .info .information {
+    margin-left: 35%;
   }
 }
 /*# sourceMappingURL=style.css.map */
