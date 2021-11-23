@@ -111,7 +111,7 @@ body {
 }
 
 .about .about-content {
-  padding: 30px 90px 0 45px;
+  padding: 30px 50px 0 45px;
 }
 
 .about h1 {
@@ -471,6 +471,19 @@ body {
           box-shadow: 0 0.5rem 1rem rgba(51, 51, 51, 0.3);
 }
 
+@media (max-width: 992px) {
+  .about .card-row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .experience .box {
+    height: 38rem;
+  }
+  .contact .info .information p {
+    font-size: 1.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   html {
     font-size: 70%;
@@ -516,6 +529,12 @@ body {
     margin-right: auto;
     margin-left: auto;
     width: 50%;
+  }
+  .about .card-row {
+    display: block;
+  }
+  .about .card-row .card {
+    width: 300%;
   }
   .contact .info .information {
     margin-left: 35%;
